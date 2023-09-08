@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  background: black;
+  width: 5px;
+  left: 50%;
+  top: 0;
+}
+
+.range-indicator {
+  height: 32px;
+  transform-origin: 0 118px;
+}
+
+.indicator-start {
+  transform: rotate(-140deg);
+}
+
+.indicator-end {
+  transform: rotate(+140deg);
+}
+
+.indicator-thermo {
+  height: 50px;
+  transform-origin: 0 100px;
+  transition: 1s linear;
+}
